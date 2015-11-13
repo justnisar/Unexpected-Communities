@@ -15,5 +15,13 @@ The keys which are recieved from twitter needs to be input here for the program 
 
 1) Run the code code_to_download_tweets.py -q "query" -d data to download the tweets. You can use a '>' operator to save to JSON format
 
-2)
+2) Export the JSON file to MongoDB by using the mongo import tool. Example : mongoimport --db database_name --collection collection_name --file file.json 
+This command will import the JSON file as a database collection(table in RDS)
+
+3) These collections can be used in any python code by just importing the collections.
+	from pymongo import MongoClient
+	client = MongoClient() // a reference of MongoDB
+	db = client.test // connecting to a database
+
+
 
