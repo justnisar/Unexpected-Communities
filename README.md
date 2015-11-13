@@ -23,5 +23,9 @@ This command will import the JSON file as a database collection(table in RDS)
 	client = MongoClient() // a reference of MongoDB
 	db = client.test // connecting to a database
 
+4) The code to extract the tweets with time line as 'null'. The project focuses on mining unexpected communities in social media and we would like to consider the geographical distance with the help of time zones. We do not need tweets which do not have a time zone.
+We run the code "code_to_remove_null_time_zones.py" to remove the timezones.
+
+5) After the null timezones are removed, 
 
 
